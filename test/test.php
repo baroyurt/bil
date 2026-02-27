@@ -158,67 +158,70 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 /* ---- TICKET ---- */
 .bilet {
     width: 72mm;
-    min-height: 112mm;
+    height: 112mm;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding: 4mm 3mm 3mm;
+    padding: 3mm 3mm 2mm;
     background: #fff;
     color: #000;
+    overflow: hidden;
 }
 
 .bilet .bilet-logo {
-    width: 66mm;
+    width: 52mm;
     height: auto;
     display: block;
-    margin: 0 auto 2mm;
-    filter: grayscale(100%);
+    margin: 0 auto 1mm;
 }
 
 .bilet .etkinlik-bar {
     display: block;
     background: #000;
     color: #fff;
-    font-size: 13pt;
+    font-size: 10pt;
     font-weight: 700;
     font-style: italic;
-    padding: 2mm 3mm;
-    margin: 2mm 0;
-    letter-spacing: 1px;
+    padding: 1.5mm 3mm;
+    margin: 1.5mm 0;
+    letter-spacing: 0.5px;
 }
 
 .bilet .misafir-ad {
     display: block;
-    font-size: 11pt;
+    font-size: 10pt;
     font-weight: 700;
-    margin: 2mm 0 1mm;
-    letter-spacing: 1px;
+    margin: 1.5mm 0 0.5mm;
+    letter-spacing: 0.5px;
 }
 
 .bilet .uye-bilgi {
     display: block;
-    font-size: 9pt;
-    margin-bottom: 2mm;
+    font-size: 8pt;
+    color: #000;
+    margin-bottom: 1.5mm;
 }
 
 .bilet .dashed {
     border: none;
     border-top: 1px dashed #000;
-    margin: 2mm 0;
+    margin: 1.5mm 0;
 }
 
 .bilet .ticket-no {
     display: block;
-    font-size: 20pt;
+    font-size: 16pt;
     font-weight: 900;
-    margin: 2mm 0;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1.5mm 0;
     letter-spacing: 1px;
 }
 
 .bilet .zaman-sira {
     display: block;
-    font-size: 9pt;
-    margin: 2mm 0 1mm;
+    font-size: 8pt;
+    color: #000;
+    margin: 1.5mm 0 0.5mm;
 }
 </style>
 </head>
