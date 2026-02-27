@@ -179,7 +179,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     display: block;
     background: #000;
     color: #fff;
-    font-size: 10pt;
+    font-size: 7pt;
     font-weight: 700;
     font-style: italic;
     padding: 1mm 3mm;
@@ -189,7 +189,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .bilet .misafir-ad {
     display: block;
-    font-size: 10pt;
+    font-size: 7pt;
     font-weight: 700;
     margin: 1mm 0 0.5mm;
     letter-spacing: 0;
@@ -197,7 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .bilet .uye-bilgi {
     display: block;
-    font-size: 8pt;
+    font-size: 7pt;
     color: #000;
     margin-bottom: 1mm;
     letter-spacing: 0;
@@ -211,7 +211,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .bilet .ticket-no {
     display: block;
-    font-size: 16pt;
+    font-size: 13pt;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
     margin: 1mm 0;
@@ -220,7 +220,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .bilet .zaman-sira {
     display: block;
-    font-size: 8pt;
+    font-size: 7pt;
     color: #000;
     margin: 1mm 0 0.5mm;
     letter-spacing: 0;
