@@ -167,44 +167,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     color: #000;
 }
 
-.bilet .x-logo {
-    font-size: 26pt;
-    color: #bbb;
-    line-height: 1;
-    margin-bottom: 1mm;
-    letter-spacing: -4px;
+.bilet .bilet-logo {
+    width: 66mm;
+    height: auto;
     display: block;
-}
-
-.bilet .chamada {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22pt;
-    font-weight: 900;
-    letter-spacing: 3px;
-    display: block;
-    line-height: 1;
-}
-
-.bilet .prestige-txt {
-    font-size: 11pt;
-    letter-spacing: 7px;
-    display: block;
-    margin: 1mm 0;
-}
-
-.bilet .stars {
-    font-size: 11pt;
-    letter-spacing: 3px;
-    display: block;
-    margin: 0.5mm 0;
-    color: #555;
-}
-
-.bilet .hotel-info {
-    font-size: 8.5pt;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 2mm;
+    margin: 0 auto 2mm;
+    filter: grayscale(100%);
 }
 
 .bilet .etkinlik-bar {
@@ -213,6 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     color: #fff;
     font-size: 13pt;
     font-weight: 700;
+    font-style: italic;
     padding: 2mm 3mm;
     margin: 2mm 0;
     letter-spacing: 1px;
@@ -334,11 +303,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="bilet">
 
             <!-- Logo / Header -->
-            <span class="x-logo">✕✕</span>
-            <span class="chamada">CHAMADA</span>
-            <span class="prestige-txt">P R E S T I G E</span>
-            <span class="stars">✦ ✦ ✦ ✦ ✦</span>
-            <span class="hotel-info">HOTEL · CASINO · SPA</span>
+            <img src="logogrand.png" class="bilet-logo" alt="Chamada Logo">
 
             <!-- Event bar -->
             <span class="etkinlik-bar"><?= htmlspecialchars($etkinlik) ?></span>
