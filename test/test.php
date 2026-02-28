@@ -158,98 +158,71 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 /* ---- TICKET ---- */
 .bilet {
     width: 72mm;
-    min-height: 112mm;
+    min-height: 102mm;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 4mm 3mm 3mm;
+    padding: 2mm 3mm 1mm;
     background: #fff;
     color: #000;
 }
 
-.bilet .x-logo {
-    font-size: 26pt;
-    color: #bbb;
-    line-height: 1;
-    margin-bottom: 1mm;
-    letter-spacing: -4px;
+.bilet .bilet-logo {
+    width: 52mm;
+    height: auto;
     display: block;
-}
-
-.bilet .chamada {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22pt;
-    font-weight: 900;
-    letter-spacing: 3px;
-    display: block;
-    line-height: 1;
-}
-
-.bilet .prestige-txt {
-    font-size: 11pt;
-    letter-spacing: 7px;
-    display: block;
-    margin: 1mm 0;
-}
-
-.bilet .stars {
-    font-size: 11pt;
-    letter-spacing: 3px;
-    display: block;
-    margin: 0.5mm 0;
-    color: #555;
-}
-
-.bilet .hotel-info {
-    font-size: 8.5pt;
-    letter-spacing: 2px;
-    display: block;
-    margin-bottom: 2mm;
+    margin: 0 auto 1mm;
 }
 
 .bilet .etkinlik-bar {
     display: block;
     background: #000;
     color: #fff;
-    font-size: 13pt;
+    font-size: 10pt;
     font-weight: 700;
-    padding: 2mm 3mm;
-    margin: 2mm 0;
-    letter-spacing: 1px;
+    font-style: italic;
+    padding: 1mm 3mm;
+    margin: 1mm 0;
+    letter-spacing: 0;
 }
 
 .bilet .misafir-ad {
     display: block;
-    font-size: 11pt;
+    font-size: 8pt;
     font-weight: 700;
-    margin: 2mm 0 1mm;
-    letter-spacing: 1px;
+    margin: 1mm 0 0.5mm;
+    letter-spacing: 0;
 }
 
 .bilet .uye-bilgi {
     display: block;
-    font-size: 9pt;
-    margin-bottom: 2mm;
+    font-size: 8pt;
+    color: #000;
+    margin-bottom: 1mm;
+    letter-spacing: 0;
 }
 
 .bilet .dashed {
     border: none;
     border-top: 1px dashed #000;
-    margin: 2mm 0;
+    margin: 1mm 0;
 }
 
 .bilet .ticket-no {
     display: block;
-    font-size: 20pt;
+    font-size: 13pt;
     font-weight: 900;
-    margin: 2mm 0;
-    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1mm 0;
+    letter-spacing: 0;
 }
 
 .bilet .zaman-sira {
     display: block;
-    font-size: 9pt;
-    margin: 2mm 0 1mm;
+    font-size: 7pt;
+    color: #000;
+    margin: 1mm 0 0.5mm;
+    letter-spacing: 0;
 }
 </style>
 </head>
@@ -334,11 +307,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="bilet">
 
             <!-- Logo / Header -->
-            <span class="x-logo">✕✕</span>
-            <span class="chamada">CHAMADA</span>
-            <span class="prestige-txt">P R E S T I G E</span>
-            <span class="stars">✦ ✦ ✦ ✦ ✦</span>
-            <span class="hotel-info">HOTEL · CASINO · SPA</span>
+            <img src="logogrand.png" class="bilet-logo" alt="Chamada Logo">
 
             <!-- Event bar -->
             <span class="etkinlik-bar"><?= htmlspecialchars($etkinlik) ?></span>
