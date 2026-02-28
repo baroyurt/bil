@@ -158,14 +158,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 /* ---- TICKET ---- */
 .bilet {
     width: 72mm;
-    height: 102mm;
+    min-height: 102mm;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 2mm 3mm 1mm;
     background: #fff;
     color: #000;
-    overflow: hidden;
 }
 
 .bilet .bilet-logo {
@@ -179,7 +178,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     display: block;
     background: #000;
     color: #fff;
-    font-size: 7pt;
+    font-size: 10pt;
     font-weight: 700;
     font-style: italic;
     padding: 1mm 3mm;
@@ -189,7 +188,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .bilet .misafir-ad {
     display: block;
-    font-size: 7pt;
+    font-size: 8pt;
     font-weight: 700;
     margin: 1mm 0 0.5mm;
     letter-spacing: 0;
@@ -197,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .bilet .uye-bilgi {
     display: block;
-    font-size: 7pt;
+    font-size: 8pt;
     color: #000;
     margin-bottom: 1mm;
     letter-spacing: 0;
