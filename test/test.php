@@ -160,7 +160,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     width: 72mm;
     height: 102mm;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 2mm 3mm 1mm;
     background: #fff;
